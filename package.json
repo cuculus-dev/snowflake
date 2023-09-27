@@ -1,0 +1,47 @@
+{
+  "name": "@cuculus/snowflake",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuculus-dev/snowflake.git"
+  },
+  "author": "takecchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuculus-dev/snowflake/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/cuculus-dev/snowflake#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "jest": {
+    "preset": "ts-jest/presets/js-with-ts",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/*.test.ts"
+    ]
+  },
+  "volta": {
+    "node": "18.18.0",
+    "npm": "10.1.0"
+  }
+}
