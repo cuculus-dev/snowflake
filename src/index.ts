@@ -1,5 +1,5 @@
 export class Snowflake {
-  private static readonly EPOCH = 1690815600000n;
+  private static readonly EPOCH = 1288834974657n;
   private static readonly WORKER_ID_BITS = 10n;
   private static readonly SEQUENCE_BITS = 12n;
 
